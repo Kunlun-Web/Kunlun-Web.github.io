@@ -1,0 +1,4163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Kunlun Wang Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="dist/myAvatar.ico" type="image/x-icon">
+  <link rel="stylesheet" href="dist/css/main.bundle.css">
+
+
+  <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+
+
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href="jquery.readall.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="test.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+
+  <style>
+    #loader {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid #444444;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+    }
+      
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+      
+    .load-center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+</style>
+  
+
+
+</head>
+
+<body id="page-top">
+
+
+
+
+  <div id="loader" class="load-center"></div>
+
+  <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
+
+
+
+
+  <!-- original: -->
+
+  <!-- <nav class="navbar" style = "background: #d4d5d9 " role="navigation" aria-label="main navigation">
+    <div class="">
+      <div class="navbar-item is-hidden-desktop">
+        <a href="https://github.com/kunlunW" target="_blank" rel="noopener noreferrer" class="icon is-large has-text-light">
+          <i class="fab fa-2x fa-github"></i>
+        </a>
+      </div>
+      <div class="navbar-item is-hidden-desktop">
+        <a href="https://www.linkedin.com/in/kunlun-wang-9a87781aa/" target="_blank" rel="noopener noreferrer" class="icon is-large has-text-light">
+          <i class="fab fa-2x fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a href="https://github.com/kunlunW" target="_blank" rel="noopener noreferrer" class="icon is-large has-text-light">
+            <i class="fab fa-2x fa-github"></i>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a href="https://www.linkedin.com/in/kunlun-wang-9a87781aa/" target="_blank" rel="noopener noreferrer" class="icon is-large has-text-light">
+            <i class="fab fa-2x fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+
+
+
+
+
+
+
+
+
+  <!-- <div style="display: none" id="hideAll">&nbsp;</div>
+
+  <style>
+    #hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 9999; /* Higher than anything else in the document */
+
+ }
+  </style>
+
+  <script type="text/javascript">
+    window.onload = function() 
+  { document.getElementById("hideAll").style.display = "none"; }
+ </script>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- first try: -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  
+    <div class="container-navbar">
+        <a class="" href="#page-top"><img src="dist/img/kunlun-logo1.png" alt="..." style="max-width: 35%;
+          height: auto"/>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+          </button>
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#my-story">Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#my-education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#my-specialty">Specialty</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#my-experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#my-projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#my-contacts">Contacts</a></li>
+
+            </ul>
+        </div>      
+    </div>
+</nav>
+
+
+
+<!-- <header id="menu-jk" class="container-fluid">
+  <div class="container">
+      <div class="row ">
+         <div class="col-lg-3 col-md-12 logo">
+             <img src="assets/images/logo_gray.png" alt="">
+             <a class="small-menu" data-toggle="collapse" data-target="#menu" href="#menu">
+                  <i class="fas d-lg-none  fa-bars"></i>
+             </a>
+         </div>
+         <div id="menu" class="col-lg-9 d-none d-lg-block top-nav">
+             <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about">About US</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#generic_price_table">Pricing</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+              </ul>
+         </div>
+
+      </div>
+  </div>
+</header> -->
+
+
+
+
+
+  <!-- <section class="hero is-dark">
+    <div class="hero-body" style = "background: #d4d5d9;
+    background-size: cover; padding-bottom: 100px;">
+      <div class="container" >
+        <div class="level">
+          <div class="level-item has-text-centered">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src="dist/img/me-big2.jpg">
+            </figure>
+          </div>
+        </div>
+
+        <div class="columns has-text-centered">
+          <div class="column">
+            <h1 class="title is-1">
+              Hello! <span class="wave">👋🏻</span> I'm Kunlun Wang 
+            </h1>
+            <br>
+            <h2 class="subtitle" style="color:#fff"><strong>I'm  <span class="typing" ></span></strong></h2>
+
+            <br>
+            <h2 class="subtitle">
+  
+              <strong>Self-driven, quick starter, passionate interdisciplinary learner <br> who enjoys solving complex and challenging real-world problems.</strong>
+            </h2>
+            
+            <p>
+              <a href="dist/docs/Kunlun Wang CV.pdf" target="_blank" rel="noopener noreferrer" class="icon has-text-light">
+                <i class="fas fa-file-word"></i> <strong> Resume</strong>
+              </a>
+            
+            </p>
+
+            
+              <div class="scroll-down"></div>
+         
+            
+
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+
+  <section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="dist/img/kunlun-photo2.png" alt="author image">
+			</div>
+			<div class="top-banner__text column">
+				
+				<h1 class="title is-1">
+					Hello! <span class="wave">👋🏻</span>  
+				  </h1>
+
+				  <h1 class="title is-1">
+					I'm Kunlun Wang
+				  </h1>
+
+          <br/>
+
+          <h2 class="subtitle" style="color:#fff"><strong>I'm  <span class="typing" ></span></strong></h2>
+
+          
+				<br/>
+        <h2 class="subtitle" style="list-style: square;">
+          <li>
+          <strong >Co-founder of BeatProfiler: An all-in-one platform for cardiac imaging analysis</strong>
+          </li>
+
+        </h2>
+
+        <h2 class="subtitle" style="list-style: square;">
+          <li>
+            <strong>Machine learning enthusiast</strong>
+          </li>
+        </h2>
+
+        <h2 class="subtitle" style="list-style: square;">
+          <li>
+            <strong>Full-stack software engineer</strong>
+            </li>
+        </h2>
+
+        <p>
+
+        <a class="btn btn-primary" href="https://beatprofiler.github.io/" target="_blank" role="button" style="color: #363636; font-size:20px;"><strong>Check out BeatProfiler!</strong></a>
+
+        <!-- <button type="button" href="https://beatprofiler.github.io/" target="_blank" class="btn btn-primary" style="color: #363636; font-size:20px;"> 
+          <strong>Check out BeatProfiler!</strong>
+        </button> -->
+
+      </p>
+
+      <p class="brand-button">
+        <a href="https://drive.google.com/file/d/1reUyTkxroGOAcE6B9qQi2GgDwsUOxQw5/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="icon has-text-light">
+          <i class="fas fa-file-word"></i> <strong> Resume</strong>
+        </a>
+      </p>
+        
+        <div class="scroll-down"></div>
+			</div>
+		</div>
+	</section>
+
+
+
+  
+
+
+
+
+  
+
+  <!-- <section class="section">
+    <div class="container">
+      <h1 class="title">About Me</h1>
+      <hr />
+      <div class = "test about-me">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="dist/img/graduation.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p>Focused and enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure
+              to the underlying concepts and applying them vividly to various projects, my love for these domains came into being.
+              I am a passionate individual who thrives to build and apply algorithms to solve real-world industry problems.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 12 October 1996</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +1 480-401-8112</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Tempe, AZ</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> rajaprerak@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+  </section> -->
+
+  
+  <div class="section" id="my-story">
+		<div class="container test" style="padding-top: 100px;">
+      <h1 class="title">My story</h1>
+      <hr />
+			<div class="content-section">
+				<!-- <div class="title">
+					<h1>My Story</h1>
+				</div> -->
+				<div class="content">
+					<h3>I'm an interdisciplinary learner </h3>
+					<p style="text-indent: 40px;">
+            Hi there! My name is Kunlun, and I am a recent graduate of Columbia University. 
+            I have a bachelor's degree in Biochemistry and Computer Science from UW-Madison, 
+            where I gained a wealth of theoretical knowledge and lab experience in a variety 
+            of subjects including zoology, organic chemistry, analytical chemistry, physical 
+            chemistry, biochemistry, and botany. I also had the opportunity to work at Prof. 
+            Scott Coyle's lab, where I designed a machine-learning based graphical user interface 
+            to analyze the behavior of a microorganism species called Lacrymaria.
+          </p>
+          <p style="text-indent: 40px;">
+            I also hold a master's degree in Biomedical Engineering from Columbia University,
+             where I worked in the Stem Cell and Tissue Engineering Lab under the supervision 
+             of Prof. Gordana Vunjak-Novakovic. During my time there, I focused on using 
+             deep learning for the classification of calcium transient signals in 
+             iPSC-derived cardiomyocytes, and me and another lab member developed an all-in-one software 
+             called beatprofiler for cardiac imaging analysis.
+          </p>
+
+          <p style="text-indent: 40px;">
+            Through a variety of computer courses and projects, I have become proficient 
+            in using 8+ programming languages, including Python, JavaScript, Java, R, HTML,
+             MATLAB, and C. I have also gained experience in machine learning applications, 
+             full-stack software development, and bioinformatics analysis.
+          </p>
+          <!-- <p style="text-indent: 40px;">
+I also have lab experience in which I designed a machine-learning based graphical user interface to analyze the behavior of a microorganism species. I am excited to bring my skills and experience to a new opportunity, and am eager to contribute to the success of a team.
+          </p> -->
+          <!-- <button class="button-more subtitle is-5 " style = "font-weight: bold;">Biochemistry Lab</button> -->
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="dist/img/graduation_combine.png">
+			</div>
+		</div> 
+	</div>
+
+  <style>
+    .section-try{
+      width: 100%;
+      min-height: 40vh;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .container-try{
+      width: 80%;
+      display: block;
+      margin: auto;
+      padding-top: 100px;
+    } 
+
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+  padding-top:2%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+
+	font-size: 15px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+
+@media (max-width: 768px){
+	.container{
+	width: 90%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
+  </style>
+
+
+  <style>
+    .interests .icon-box {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background: #09203a;
+      transition: ease-in-out 0.3s;
+    }
+    
+    
+    .interests .icon-box i {
+      font-size: 32px;
+      padding-right: 10px;
+      line-height: 1;
+    }
+    
+    .interests .icon-box h3 {
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-size: 16px;
+      color: #fff;
+    }
+    
+    .interests .icon-box:hover {
+      background: #042b56eb;
+    }
+    
+  </style>
+
+
+
+
+
+
+  <!--------------Education Test----------->
+  <section class="section" data-section="education" id="my-education">
+    <div class="container">
+
+      <h1 class="title">Education</h1>
+        <hr/>
+    
+       <div class="row">
+          <div class="col-md-12">
+             <div class="timeline-centered">
+                <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                   <div class="timeline-entry-inner">
+                      <div class="timeline-icon color-none">
+                        <figure class="image is-48x48">
+                          <img class="is-rounded " src="dist/img/Bashu.jpg" style = "position:relative; left:-14px; top:-5px" >
+                        </figure>
+          
+                      </div>
+                      <div class="timeline-label" style = "color:#363636">
+
+                         <a href="https://en.wikipedia.org/wiki/Bashu_Secondary_School" target="_blank" rel="noopener noreferrer" style = "color:#363636; font-size: 1.2em; font-weight: bold;">Bashu Secondary School</a> <span>2014 - 2017</span>
+                         <p ><strong><i class="fas fa-location-arrow"></i> Chongqing, China</strong><br>
+                          <br>
+                            Focused on learning <strong>English & Chinese Literature</strong>, <strong>Math</strong>, and <strong>Chemistry</strong>; participated in <strong>student club</strong> activities and <strong>leadership</strong> programs. 
+                        
+                             <br>
+                         <p></p>  
+                      </div>
+                   </div>
+                </article> -->
+
+
+
+                <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                   <div class="timeline-entry-inner">
+                      <div class="timeline-icon color-none">
+                        <figure class="image is-48x48">
+                          <img class="is-rounded " src="dist/img/noble-logo.png" style = "position:relative; left:-14px; top:-5px;" >
+                        </figure>
+                      </div>
+                      <div class="timeline-label" style = "color:#363636">
+                         <a href="https://www.rsu60.org/" target="_blank" rel="noopener noreferrer" style = "color:#363636; font-size: 1.2em; font-weight: bold;">Noble High School</a> <span>2015 - 2016</span>
+                         <p><strong><i class="fas fa-location-arrow"></i> North Berwick, Maine</strong><br>
+                          <br> 
+                            Exchange student, focused on learning <strong>Biology</strong>, <strong>Chemistry</strong>, <strong>Anatomy & Physiology</strong>, and <strong>US History</strong>
+                            
+                         <p></p>
+                      </div>
+                   </div>
+                </article> -->
+
+
+                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                   <div class="timeline-entry-inner">
+                      <div class="timeline-icon color-none">
+                        <figure class="image is-48x48">
+                          <img class="is-rounded " src="dist/img/uw-logo2.png" style = "position:relative; left:-14px; top:-5px;" >
+                        </figure>
+                      </div>
+                      <div class="timeline-label" style = "color:#363636">
+                         <a href='https://www.wisc.edu/' target="_blank" rel="noopener noreferrer" style = "color:#363636; font-size: 1.2em; font-weight: bold;" >University of Wisconsin-Madison</a> <span>Sep 2017 - May 2021</span>
+                         <p><strong><i class="fas fa-location-arrow"></i> Madison, Wisconsin</strong><br>
+                          <br>
+                           <strong> B.S. in  Computer Science and Biochemistry</strong>.
+              
+                         <p></p>
+                      </div>
+                   </div>
+                </article>
+
+                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                  <div class="timeline-entry-inner">
+                     <div class="timeline-icon color-none">
+                       <figure class="image is-48x48">
+                         <img class="is-rounded " src="dist/img/columbia-logo3.png" style = "position:relative; left:-14px; top:-5px;" >
+                       </figure>
+                     </div>
+                     <div class="timeline-label" style = "color:#363636">
+                        <a href='https://www.columbia.edu/' target="_blank" rel="noopener noreferrer" style = "color:#363636; font-size: 1.2em; font-weight: bold;">Columbia University</a> <span>Sep 2021 - Dec 2022</span>
+                        
+                          <p ><strong><i class="fas fa-location-arrow"></i> New York City</strong><br>
+
+                          <br>
+                          <strong> M.S. in Biomedical Engineering</strong>.
+                           
+                        <p></p>
+                     </div>
+                  </div>
+               </article>
+
+
+                <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                   <div class="timeline-entry-inner">
+                      <div class="timeline-icon color-none">
+                        
+                      </div>
+                   </div>
+                </article>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+  <!--------------Education Test End----------->
+
+
+
+
+
+
+
+
+  <section class="section" id="my-specialty">
+    <div class="container">
+      <h1 class="title">What I do?</h1>
+      <hr />
+
+      <div class="user">
+
+
+
+        <!-- Technology Stack #1: Languages -->
+        <div class="tech test1">
+          <h3 style="text-align:center;">iPSC derived cardiomyocytes research</h3>
+          <!-- <span class="fa-stack fa-1x" style="font-size: 25px;"><i class="fas fa-square fa-stack-2x"></i><i class="fab fa-html5 fa-stack-1x fa-inverse"></i></span>
+          
+          <span class="fa-stack fa-1x" style="font-size: 25px;"><i class="fas fa-square fa-stack-2x"></i><i class="fab fa-html5 fa-stack-1x fa-inverse"></i></span> -->
+          <div style="text-align:center;">
+          <span>
+            <img src="dist/img/research1.png" alt="Placeholder image" style="height: 58px; width: auto">
+          </span>
+
+          <span>
+            <img src="dist/img/research3.png" alt="Placeholder image" style="height: 58px; width: auto">
+          </span>
+
+          <span>
+            <img src="dist/img/research2.png" alt="Placeholder image" style="height: 58px; width: auto">
+          </span>
+
+          <span>
+            <img src="dist/img/research4.png" alt="Placeholder image" style="height: 58px; width: auto">
+          </span>
+        </div>
+
+          <!-- <i class="devicon-python-plain colored"></i>
+          <i class="devicon-java-plain-wordmark colored"></i>
+          <i class="devicon-cplusplus-plain colored"></i>
+          <i class="devicon-javascript-plain colored"></i> -->
+          <p style="text-indent: 40px;">In my iPSC research, I utilize high throughput imaging and advanced image processing 
+            techniques to study the electrophysiological signal of iPSC-derived cardiomyocytes <strong>(publication in preparation)</strong>. 
+          </p>
+
+          <p style="text-indent: 40px;">By applying deep learning algorithms, I am able to accurately qualify and quantify 
+              the signals produced by these cells, providing valuable insights into 
+              their function and potential for use in disease modeling and drug development.</p>
+        </div>
+
+
+
+
+
+        <!-- Technology Stack #2: Front-End -->
+        <div class="tech test1">
+          <h3 style="text-align:center;">Machine learning</h3>
+        
+          <div style="text-align:center;">
+          <span>
+            <img src="dist/img/tensorflow.png" alt="Placeholder image" style="height: 58px; width: auto">
+          </span>
+          <span>
+            <img src="dist/img/keras.png" alt="Placeholder image" style="height: 38px; width: auto">
+          </span>
+          <span>
+            <img src="dist/img/pytorch.png" alt="Placeholder image" style="height: 58px; width: auto">
+          </span>
+          <span>
+            <img src="dist/img/fastai.png" alt="Placeholder image" style="height: 38px; width: auto">
+          </span>
+        </div>
+         
+          <p style="text-indent: 40px;">With over 3 and a half years of experience in machine learning, 
+            I have developed a strong foundation in both statistical and probabilistic approaches as well as deep learning. 
+            I have applied these skills to a range of tasks including: 
+            
+              <li>
+                classification of calcium transient signals of iPSC-derived cardiomyocytes induced by cardioactive drugs by mechanism of action <strong>(publication in preparation)</strong>
+              </li>
+              <li>
+                single cell segmentation
+              </li>
+              <li>
+                classification of amino acid sequences into protein families, classification of ECG signals
+              </li>
+              <li>
+                classification and subtyping of cancer cell lines using single cell RNA sequencing data,
+              </li>
+              <li>
+                prediction of transcriptional repressor binding in cancer cell lines using ATAC-Seq data 
+              </li>
+              <li>
+                prediction of chromatin accessibility using ATAC-Seq data
+              </li>
+              <li>
+                prediction of DNA methylation states using single-cell bisulfite sequencing data
+              </li>  
+          </p>
+        </div>
+
+        <div class="tech test1">
+          <h3 style="text-align:center;">Data analytics</h3>
+        
+          <div style="text-align:center;">
+          <span>
+            <img src="dist/img/spark.png" alt="Placeholder image" style="height: 38px; width: auto">
+          </span>
+          <span>
+            <img src="dist/img/pandas.png" alt="Placeholder image" style="height: 38px; width: auto">
+          </span>
+          <span>
+            <img src="dist/img/numpy.png" alt="Placeholder image" style="height: 38px; width: auto">
+          </span>
+          <span>
+            <img src="dist/img/matplotlib.png" alt="Placeholder image" style="height: 18px; width: auto">
+          </span>
+          <span>
+            <img src="dist/img/scikit.png" alt="Placeholder image" style="height: 38px; width: auto">
+          </span>
+          <span>
+            <img src="dist/img/scipy.png" alt="Placeholder image" style="height: 78px; width: auto">
+          </span>
+        </div>
+         
+          <p style="text-indent: 40px;">
+            With over 4 years of experience in data analytics, 
+            I have gained expertise in dealing with large and complex datasets.
+          </p>
+          
+          <p style="text-indent: 40px;">
+            I have a strong ability to explore and analyze data in depth, 
+            and I have successfully applied this skill to various types of datasets, 
+            including biological datasets which often contain outliers and exhibit 
+            heterogenous patterns.
+          </p>
+
+           
+          <p style="text-indent: 40px;">
+            I am able to identify these outliers and build statistical or 
+            machine learning-based analysis frameworks to explain the heterogeneity.
+          </p>
+          
+
+          <p style="text-indent: 40px;">
+            In addition, I have experience in advanced image and video processing, 
+            including the processing of tens of terabytes of videos and  accurate extraction of them into 
+            tabular statistics (for my publication in prep). 
+          </p>
+
+            <p style="text-indent: 40px;">I am also proficient in using 
+            big data analytics engines such as Apache Spark and Hadoop, demonstrated 
+            through the development of a real-time stackoverflow traffic 
+            visualizer using the Spark framework for a class project.
+          </p>
+          
+        </div>
+
+      </div>
+
+      </div>
+
+
+      <div class="container" style="padding-top: 50px">
+        <div class="user">
+          <div class="tech test1">
+            <h3 style="text-align:center;">Full-stack software development</h3>
+            <div style="text-align:center;">
+              <span>
+                <img src="dist/img/react.png" alt="Placeholder image" style="height: 58px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/reactnative.png" alt="Placeholder image" style="height: 28px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/angular.svg" alt="Placeholder image" style="height: 28px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/pyqt.png" alt="Placeholder image" style="height: 58px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/bootstrap.png" alt="Placeholder image" style="height: 58px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/flask.png" alt="Placeholder image" style="height: 58px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/nodejs.png" alt="Placeholder image" style="height: 58px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/mysql.png" alt="Placeholder image" style="height: 58px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/aws.png" alt="Placeholder image" style="height: 58px; width: auto">
+              </span>
+              <span>
+                <img src="dist/img/gcp.png" alt="Placeholder image" style="height: 58px; width: auto">
+              </span>
+            </div>
+            <p style="text-indent: 40px;">
+              With over 4 years of experience in full-stack software development, I am skilled in developing web, mobile, and GUI applications. 
+            </p>
+
+            <p style="text-indent: 40px;">
+              I have a comprehensive understanding of the software development process from conception to deployment, 
+              and I have experience in both monolithic and microservice architectures. 
+            </p>
+
+            <p style="text-indent: 40px;">
+              I am proficient in scaling up applications and increasing security by deploying them on infrastructure such as AWS, 
+              where I have gained experience with various cloud services such as EC2, Elastic Beanstalk, RDS, Cloud Front, API Gateway, SNS, and Lambda. 
+            </p>
+
+            <p style="text-indent: 40px;">
+              My skills extend to both frontend and backend development, with a focus on creating responsive and appealing frontends 
+              that adhere to UX design principles, and a strong foundation in SQL database operations and API such as
+              RESTful framework. 
+            </p>
+
+            <p style="text-indent: 40px;">
+              I am familiar with agile methodologies and adapt git for effective project management.
+            </p>
+
+            </div>
+
+
+
+
+          <div class="tech test1">
+            <h3 style="text-align:center;">Genomics analysis</h3>
+            <!-- <span class="fa-stack fa-1x" style="font-size: 25px;"><i class="fas fa-square fa-stack-2x"></i><i class="fab fa-html5 fa-stack-1x fa-inverse"></i></span>
+            
+            <span class="fa-stack fa-1x" style="font-size: 25px;"><i class="fas fa-square fa-stack-2x"></i><i class="fab fa-html5 fa-stack-1x fa-inverse"></i></span> -->
+            <div style="text-align:center;">
+            <span>
+              <img src="dist/img/r.png" alt="Placeholder image" style="height: 58px; width: auto">
+            </span>
+
+            <span>
+              <img src="dist/img/matlab.png" alt="Placeholder image" style="height: 58px; width: auto">
+            </span>
+  
+            <span>
+              <img src="dist/img/monocle3.png" alt="Placeholder image" style="height: 58px; width: auto">
+            </span>
+  
+            <span>
+              <img src="dist/img/bioconductor.svg" alt="Placeholder image" style="height: 58px; width: auto">
+            </span>
+  
+            <span>
+              <img src="dist/img/ggplot2.png" alt="Placeholder image" style="height: 58px; width: auto">
+            </span>
+
+          </div>
+  
+            <!-- <i class="devicon-python-plain colored"></i>
+            <i class="devicon-java-plain-wordmark colored"></i>
+            <i class="devicon-cplusplus-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i> -->
+            <p style="text-indent: 40px;">
+              During my master's program, I gained experience in genomics analysis through the completion of 
+              two courses focused on using computational tools to analyze genomics data. 
+            </p>
+  
+            <p style="text-indent: 40px;">
+              Through these courseworks, I became proficient in analyzing both single-cell RNA sequencing and single-cell chemical transcriptomics data. 
+
+            </p>
+
+            <p style="text-indent: 40px;">
+              My skillset includes performing quality control to filter cells using quality metrics, 
+              performing dimensionality reduction and clustering, identifying marker genes, 
+              conducting differential expression analysis, performing trajectory analysis, 
+              and conducting gene expression functional analysis. 
+             
+            </p>
+
+            <p style="text-indent: 40px;">
+              Overall, I have developed a strong foundation in genomics analysis through these 
+              courseworks and am confident in my ability to analyze and interpret genomics data.
+            </p>
+          </div>
+
+
+        </div>
+
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+  
+
+
+  <!-- <section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Skills</h2>
+            <h3 class="section-subheading text-muted">Linguagens, ferramentas e frameworks que estudo.</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-info"></i><i class="fab fa-html5 fa-stack-1x fa-inverse"></i></span>
+                <h4 class="my-3">HTML5</h4>
+                <p class="text-muted">Linguagem de marcação utilizada na construção de páginas na Web. Junto com CSS é onde eu mais tenho experiência, estudando-a em cursos e praticando com a criação de sites.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fab fa-js-square fa-stack-1x fa-inverse"></i></span>
+                <h4 class="my-3">JavaScript</h4>
+                <p class="text-muted">A linguagem de programação mais famosa do mercado. Realizei cursos específicos para o JS e também ja traduzi um livro sobre o assunto. Estou evoluindo a passos largos na linguagem.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fab fa-css3 fa-stack-1x fa-inverse"></i></span>
+                <h4 class="my-3">CSS3</h4>
+                <p class="text-muted">Mecanismo para adicionar estilo a um documento web. Tenho no currículo cursos focados em CSS, tendo estudado e praticado muito Flexbox e Grid.</p>
+            </div>
+             <div class="col-md-4">
+                <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fab fa-react fa-stack-1x fa-inverse"></i></span>
+                <h4 class="my-3">React</h4>
+                <p class="text-muted">Biblioteca JavaScript com foco em criar UI em páginas web. Sou apaixonado por todo o ecossistema do React, e quando somado ao TypeScript, ele se torna perfeito.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fab fa-sass fa-stack-1x fa-inverse"></i></span>
+                <h4 class="my-3">Sass</h4>
+                <p class="text-muted">O pré-processador de CSS mais famoso do mercado! Tive o primeiro contato com o Sass no curso Advanced CSS and Sass e pude entender na prática o poder dessa ferramenta.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fab fa-bootstrap fa-stack-1x fa-inverse"></i></span>
+                <h4 class="my-3">Bootstrap</h4>
+                <p class="text-muted">Bootstrap é um framework para desenvolvimento de componentes de interface e front-end para sites e aplicações web. Utilizei Bootstrap pela primeira vez no curso Web Moderno.</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<section id="skills" class="section">
+  <div class="container">
+
+    <h1 class="title" style="text-align:left;">Skills</h1>
+      <hr />
+    <!-- Languages and Databases -->
+    <div class="card">
+      <div class="card-content">
+        <h4 class="brown-text light">Languages and Databases</h4>
+        <div class="row text-center" style="padding-top: 50px">
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/python.png" class="responsive-img" /> <strong>Python</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/js.png" class="responsive-img" /> <strong>JavaScript</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/html.png" class="responsive-img"/> <strong>HTML</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/css.png" class="responsive-img"/><strong>CSS</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/r.png" class="responsive-img" /> <strong>R</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/java.png" class="responsive-img"/> <strong>Java</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/c.png" class="responsive-img" /> <strong>C</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/matlab.png" class="responsive-img"/> <strong>MATLAB</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/mysql.png" class="responsive-img"/> <strong>MySQL</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h4 class="brown-text light">Libraries</h4>
+        <div class="row text-center" style="padding-top: 50px">
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/pandas.png" class="responsive-img" /> <strong>Pandas</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/numpy.png" class="responsive-img" /> <strong>NumPy</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/matplotlib.png" class="responsive-img" /> <strong>Matplotlib</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/scikit.png" class="responsive-img" /><strong>Scikit-learn</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/scipy.png" class="responsive-img" /><strong>SciPy</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/seaborn.png" class="responsive-img" /><strong>Seaborn</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/jquery.png" class="responsive-img" /><strong>jQuery</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/d3js.png" class="responsive-img" /><strong>D3.JS</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="card">
+      <div class="card-content">
+        <h4 class="brown-text light">Frameworks</h4>
+        <div class="row text-center" style="padding-top: 50px">
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/tensorflow.png" class="responsive-img" /> <strong>TensorFlow</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/keras.png" class="responsive-img" /> <strong>Keras</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/pytorch1.png" class="responsive-img" /> <strong>PyTorch</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/fastai.png" class="responsive-img" /> <strong>FastAI</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/spark.png" class="responsive-img" /> <strong>PySpark</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/react.png" class="responsive-img" /> <strong>React</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/angular.png" class="responsive-img" /> <strong>Angular</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/pyqt.png" class="responsive-img" /> <strong>PyQT5</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/flask.png" class="responsive-img" /> <strong>Flask</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/nodejs.png" class="responsive-img" /> <strong>Node.JS</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+    <!-- Other -->
+    <div class="card">
+      <div class="card-content">
+        <h4 class="brown-text light">Cloud Computing</h4>
+        <div class="row text-center" style="padding-top: 50px">
+
+
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/aws.png" class="responsive-img" /> <strong>AWS</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/gcp.png" class="responsive-img" /> <strong>GCP</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-content">
+        <h4 class="brown-text light">Lab skills</h4>
+        <div class="row text-center" style="padding-top: 50px">
+
+
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/cellculture.png" class="responsive-img" /> <strong>iPSC culture</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/tissue.png" class="responsive-img" />  <strong>iPSC tissue culture</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/stain.png" class="responsive-img" />  <strong> Cell staining</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/imaging.png" class="responsive-img" />  <strong>High-throughput imaging</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/liquidhandler.png" class="responsive-img" /><strong>Operating liquid handler</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/pcr.png" class="responsive-img" /> <strong>PCR</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/gel.png" class="responsive-img" /> <strong>Gel electrophoresis</strong>
+          </div>
+          <div class="col s4 m2">
+            <img alt="" src="dist/img/western.png" class="responsive-img" /> <strong>Western blot</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+
+  
+
+  #skills .col img.responsive-img {
+    margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+</style>
+
+  
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="jquery.readall.js"></script>
+
+  <script>
+    $(document).ready(function () {
+        $('.test').readall({
+            // Default values
+            showheight: 400,                         // height to show
+            showrows: null,                         // rows to show (overrides showheight)
+            animationspeed: 350,                    // speed of transition
+            btnTextShowmore: 'Read more',           // text shown on button to show more
+            btnTextShowless: 'Read less',           // text shown on button to show less
+            btnClassShowmore: 'readall-button',     // class(es) on button to show more
+            btnClassShowless: 'readall-button'      // class(es) on button to show less
+        });
+    });
+</script>
+
+<script>
+
+  $(document).ready(function () {
+    $('.test1').readall({
+        // Default values
+        showheight: 300,                         // height to show
+        showrows: null,                         // rows to show (overrides showheight)
+        animationspeed: 350,                    // speed of transition
+        btnTextShowmore: 'Read more',           // text shown on button to show more
+        btnTextShowless: 'Read less',           // text shown on button to show less
+        btnClassShowmore: 'readall-button',     // class(es) on button to show more
+        btnClassShowless: 'readall-button'      // class(es) on button to show less
+    });
+});
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+<!-- <section class="section">
+  <div class="interests container">
+
+    <div class="section-title">
+      <h2>Interests</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-4">
+        <div class="icon-box">
+          <i class="ri-global-line" style="color: #ffbb2c;"></i>
+          <h3>Software Development</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="ri-database-2-line" style="color: #5578ff;"></i>
+          <h3>Machine Learning</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="ri-camera-3-line" style="color: #e80368;"></i>
+          <h3>Computer Vision</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+        <div class="icon-box">
+          <i class="ri-english-input" style="color: #1c7d32;"></i>
+          <h3>Natural Language Processing</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 mt-4">
+        <div class="icon-box">
+          <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
+          <h3>Software Engineering</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 mt-4">
+        <div class="icon-box">
+          <i class="ri-bar-chart-box-line" style="color: #f1081f;"></i>
+          <h3>Visualization</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 mt-4">
+        <div class="icon-box">
+          <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
+          <h3>Algorithms</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 mt-4">
+        <div class="icon-box">
+          <i class="ri-image-line" style="color: #ffc107;"></i>
+          <h3>Image Processing</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+ -->
+
+
+
+
+  <!-- <section class="section">
+    <div class="container">
+      <h1 class="title">Academic interests</h1>
+      <hr />
+      <div id = "interests">
+        <ul>
+          <div class="modal-trigger btn-rounded-black" data-target="project-15-modal" >
+            <p>Biomaterial & Drug delivery</p>
+          </div>
+
+          <div class="modal-trigger btn-rounded-black" data-target="project-16-modal" >
+            <p>Cancer biology & Metabolic diseases</p>
+          </div>
+
+          <div class="modal-trigger btn-rounded-black" data-target="project-17-modal" >
+            <p>Bioinformatics</p>
+          </div>
+         
+          <div class="modal-trigger btn-rounded-black" data-target="project-18-modal" >
+            <p>Machine learning</p>
+          </div>
+      </ul>
+       </div>
+      
+       
+      </div>
+
+       
+       
+    </div>
+  </section> -->
+  
+
+
+
+  <section class="section" id="my-experience">
+    <div class="container test2">
+      <h1 class="title">Experience</h1>
+      <hr />
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <a href ="https://gvnlab.bme.columbia.edu/" target="_blank" rel="noopener noreferrer" ><img src="dist/img/columbia-logo3.png" alt="Placeholder image"></a>
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4"><a href ="https://gvnlab.bme.columbia.edu/" target="_blank" rel="noopener noreferrer" class="title is-4">Laboratory For Stem Cells and Tissue Engineering</a></p>
+              <p class="subtitle is-6">Research Assistant - <time datetime="2020-5">Sep 2021</time> - <time
+                  datetime="2021-9">Dec 2022</time> </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Master's Student Research Assistant @ Columbia Vunjak-Novakovic's Lab (Department of Biomedical Engineering) </p>
+            <ul>
+              <li>Performed iPSC (Induced Pluripotent Stem Cells) culture, iPSC-iCM (iPSC derived cardiomyocytes) and iPSC-iCF (iPSC derived cardiac fibroblast) differentiation.</li>
+              <li>Engineered iPSC derived cardiac tissues, fabricated cardiac tissue bioreactors, promotes cardiac tissues maturation through electrical stimulation </li>
+              <li>Performed calcium and brightfield imaging of iPSC-iCM and cardiac tissues; operated liquid handlers for precision lab works, performed immunofluorescent staining and high-throughput imaging of iPSC-iCM using non-specific and cardiac markers</li>
+              <li>Developed a program to automate calcium and brightfield imaging acquisition, developed BeatProfiler, an all-in-one software that provides thorough functional analysis of cardiac calcium and brightfield videos</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">iPSC</span>
+              <span class="tag">Engineered heart tissue</span>
+              <span class="tag">Cardiomyocytes</span>
+              <span class="tag">Bioreactors</span>
+              <span class="tag">High throughput imaging</span>
+              <span class="tag">Video processing</span>
+              <span class="tag">Software development</span>
+              <span class="tag">Deep learning</span>
+              <span class="tag">BeatProfiler</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <a href ="https://www.coylelab.org/" target="_blank" rel="noopener noreferrer" ><img src="dist/img/uw.jpg" alt="Placeholder image"></a>
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4"><a href ="https://www.coylelab.org/" target="_blank" rel="noopener noreferrer" class="title is-4">Coyle Lab</a></p>
+              <p class="subtitle is-6">Research Assistant - <time datetime="2020-5">May 2020</time> - <time
+                  datetime="2021-9">September 2021</time> </p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Undergraduate Research Assistant @ UW-Madison Coyle Lab (Department of Biochemistry)</p>
+            <ul>
+              <li>Lacry Intelligence: Smart Video Processing Software for Remote Microscopes </li>
+              <li>Scopestream: A Smart Chatbot on Twitch </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Microorganism behavior</span>
+              <span class="tag">AI</span>
+              <span class="tag">YOLOv5 algorithm</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">CNN</span>
+              <span class="tag">Machine learning</span>
+              <span class="tag">Tracking algorithm</span>
+              <span class="tag">gRPC</span>
+              <span class="tag">PyQt</span>
+              <span class="tag">Microscope</span>
+              <span class="tag">Twitch.TV</span>
+              <span class="tag">Python Socket</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Keras</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="dist/img/amfam.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">American Family Insurance</p>
+              <p class="subtitle is-6">Capstone Co-op (as part of COMPSCI638 Capstone) - <time datetime="2020-9">September 2020</time> - <time
+                  datetime="2020-12">December 2020</time></p>
+            </div>
+          </div>
+          <div class="content">
+            <p>American Family Insurance Co-op: Software Development</p>
+            <ul>
+              <li>Odometer Terminator (Mobile App): Mileage Extraction from Odometer Pictures for Automating Auto Insurance Processes</li>
+              <li>Acted as a Scrum Master, facilitated the practice of agile development cycle</li>
+              
+            </ul>
+            <div class="tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Password Authentication</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">PHP</span>
+              <span class="tag">XAMPP Server</span>
+              <span class="tag">OCR Model</span>
+              <span class="tag">RESTful API</span>
+              <span class="tag">Agile</span>
+              <span class="tag">Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="dist/img/uw.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">UW Madison CS Department</p>
+              <p class="subtitle is-6">CS Learning Center Tutor - <time datetime="2020-9">September 2020</time> - <time
+                  datetime="2020-12">December 2020</time></p>
+            </div>
+          </div>
+          <div class="content">
+            <p>CS programming tutor for UW-Madison CS department</p>
+            
+            <ul>
+              <li>
+                Tutored students who were taking basic programming courses (CS200, CS300, CS400, CS354), applied CS education theory when tutoring
+              </li>
+            </ul>
+
+            <div class="tags">
+              <span class="tag">Java programming</span>
+              <span class="tag">Data strcuture</span>
+              <span class="tag">JavaFX</span>
+              <span class="tag">Sorting algorithm</span>
+              <span class="tag">Hashing</span>
+              <span class="tag">Graph</span>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <a href ="https://damschenlab.zoology.wisc.edu/" target="_blank" rel="noopener noreferrer"><img src="dist/img/uw.jpg" alt="Placeholder image"></a>
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4"><a href ="https://damschenlab.zoology.wisc.edu/" target="_blank" rel="noopener noreferrer" class="title is-4">Damschen Lab</a></p>
+              <p class="subtitle is-6">Research Assistant - <time datetime="2019-1">January 2019</time> - <time
+                  datetime="2019-5">May 2019</time></p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Undergraduate Research Assistant @ UW-Madison Damschen Lab (Department of Integrative Biology)</p>
+            <ul>
+              <li>Independent research project: “Different Leaf Vein Length Per Area of
+                Mistletoe and Eucalyptus Suggests
+                Difference in Their Internal Metabolism” </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Botanical methods</span>
+              <span class="tag">Eucalyptus</span>
+              <span class="tag">Mistletoe</span>
+              <!-- <span class="tag">Chemical methods to remove the cuticle and mesophyll </span> -->
+              <span class="tag">Leaf vein length per area (LVA) </span>
+              <span class="tag">Statistical analysis </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+
+    $(document).ready(function () {
+      $('.test2').readall({
+          // Default values
+          showheight: 1000,                         // height to show
+          showrows: null,                         // rows to show (overrides showheight)
+          animationspeed: 350,                    // speed of transition
+          btnTextShowmore: 'Read more',           // text shown on button to show more
+          btnTextShowless: 'Read less',           // text shown on button to show less
+          btnClassShowmore: 'readall-button',     // class(es) on button to show more
+          btnClassShowless: 'readall-button'      // class(es) on button to show less
+      });
+  });
+  
+  </script>
+
+
+
+
+
+<!-- This is test projects -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container" id="my-projects">
+
+      <h1 class="title">Projects</h1>
+      <hr /> 
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-publication">Publication</li>
+            <li data-filter=".filter-software">Softwares</li>
+            <li data-filter=".filter-ml">Machine Learning</li>
+            <li data-filter=".filter-game">Game Dev</li>
+            <li data-filter=".filter-life">Life Science</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <!-- publication title -->
+        <div class="tile is-ancestor ">
+         <div class="tile is-vertical is-6 portfolio-item filter-publication filter-software">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-6">BeatProfiler: An all-in-one platform for cardiac imaging analysis (currently in testing phase)</p>
+                  <figure class="image is-16by9 has-ratio">
+                    <img class=" imageW" data-target="beatprofiler-modal" src="dist/img/beatprofiler-logo.jpg">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="beatprofiler-modal" >
+                      <small>View Detail</small>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tile is-vertical is-6 portfolio-item filter-publication filter-life filter-ml">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-6">
+                    Automated calcium transient acquisition and analysis pipeline enables
+                    deep learning classification of cardioactive drugs by mechanism of action
+
+                  </p>
+                  <figure class="image is-3by1">
+                    <img class=" imageW" data-target="calcium-project-modal" src="dist/img/calcium_project.png">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="calcium-project-modal" >
+                      <small>View Detail</small>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <!-- software tile -->
+        <div class="tile is-ancestor ">
+
+          <div class="tile is-vertical is-6 portfolio-item filter-software">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-4">ATeam Blog Service</p>
+                  <figure class="image is-16by9 has-ratio">
+                    <img class=" imageW" data-target="blog-modal" src="dist/img/blog1.png">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="blog-modal" >
+                      <small>View Detail</small>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="tile is-vertical is-6 portfolio-item filter-software">
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-primary">
+                <p class="title is-4">Homework Hub</p>
+                <figure class="image is-16by9">
+                  <img class="imageW" data-target="project-3-modal" src="dist/img/hh1.png">
+                  <div class="modal-trigger middleW btn-rounded-white" data-target="project-3-modal" >
+                    <p>View Detail</p>
+                  </div>
+                </figure>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        <!-- software tile continue -->
+
+        <div class="tile is-ancestor">
+        
+
+          <div class="tile is-vertical is-4 portfolio-item filter-software filter-ml">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-4">Lacry-Intelligence</p>
+                  <figure class="image is-16by9">
+                    <img class=" imageW" data-target="project-1-modal" src="dist/img/yolov5.gif">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-1-modal" >
+                      <small>View Detail</small>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+
+          <div class="tile is-vertical is-4 portfolio-item filter-software">
+            <div class="tile" >
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-4">Odometer Terminator </p>
+                  <br>
+                  <figure class="image is-9by16">
+                    <img class="imageW" data-target="project-13-modal" src="dist/img/OT-removebg.png">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-13-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure> 
+                </article>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="tile is-vertical is-4 portfolio-item filter-software">
+            <div class="tile" >
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-primary">
+              <p class="title is-4">Scope Stream</p>
+              <figure class="image is-9by16">
+                <img class="imageW" data-target="project-14-modal" src="dist/img/chat.jpg">
+                <div class="modal-trigger middleW btn-rounded-white" data-target="project-14-modal" >
+                  <p>View Detail</p>
+                </div>
+              </figure>
+            </article>
+          </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        
+        <!-- First tile -->
+        <div class="tile is-ancestor ">
+
+
+          <div class="tile is-vertical is-4 portfolio-item filter-software filter-ml">
+            <div class="tile" >
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-4">Live Stackoverflow visualizer </p>
+                  <br>
+                  <figure class="image is-1b1">
+                    <img class="imageW" data-target="stackoverflow-modal" src="dist/img/bubblechart.png">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="stackoverflow-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure> 
+                </article>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tile is-vertical is-4 portfolio-item filter-software">
+            <div class="tile" >
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-4">Badger Course </p>
+                  <br>
+                  <figure class="image is-16by9">
+                    <img class="imageW" data-target="project-6-modal" src="dist/img/badger-course2.jpg">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-6-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="tile is-vertical is-4 portfolio-item filter-software">
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-primary">
+              <p class="title is-5">Badger Bytes</p>
+              <figure class="image is-4by3">
+                <img class=" imageW" data-target="project-2-modal" src="dist/img/Badger-Byte.jpg">
+                <div class="modal-trigger middleW btn-rounded-white" data-target="project-2-modal" >
+                  <p>View Detail</p>
+                </div>
+              </figure>
+            </article>
+          </div>
+        </div>
+
+        </div>
+
+
+        <!-- second title -->
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12 portfolio-item filter-game">
+            <div class="tile">
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-5">VR Game: Escape the Haunted Hospital(3D) </p>
+                  <figure class="image is-16by9">
+                    <img class="imageW" data-target="project-4-modal" src="dist/img/vr1.jpeg">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-4-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-5">Role Playing Game: Doom Tower(2D)</p>
+                  <figure class="image is-4by3">
+                    <img class="imageW" data-target="project-5-modal" src="dist/img/doom.png">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-5-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-4">Graphics Town </p>
+                  <br>
+                  <figure class="image is-4by3">
+                    <img class="imageW" data-target="project-7-modal" src="dist/img/graphics-town.jpg">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-7-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+
+            
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Third title -->
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12 portfolio-item filter-life">
+            <div class="tile">
+           
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-5">The Effect of The E106D Mutation on HCAII (Paper)</p>
+                  <figure class="image is-4by3">
+                    <img class="imageW" data-target="project-8-modal" src="dist/img/E106D.jpg">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-8-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-5">Phosphorous Concentration Upon a Rural-
+                    Urban Gradient in Lake Mendota (Paper)</p>
+                  <figure class="image is-4by3">
+                    <img class="imageW" data-target="project-9-modal" src="dist/img/phosphorus.png">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-9-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+
+
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-6">Different Leaf Vein Length Per Area of Mistletoe
+                    and Eucalyptus Suggests Difference in Their
+                    Internal Metabolism (Paper)</p>
+                  <figure class="image is-4by3">
+                    <img class="imageW" data-target="project-11-modal" src="dist/img/LVA.jpg">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="project-11-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="tile is-ancestor">
+
+          <div class="tile is-vertical is-6 portfolio-item filter-life">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-6">Effect of PVT1 Downregulation on CCND1 Expression After Panobinostat Treatment 
+                    Reveals a Potential Tumorigenesis Pathway
+                    </p>
+                  <figure class="image is-16by9">
+                    <img class="imageW" data-target="fg-modal" src="dist/img/fg_front.png">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="fg-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="tile is-vertical is-6 portfolio-item filter-life filter-ml">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                  <p class="title is-6">A Machine Learning Pipeline for Adult and Pediatric
+                    Glioblastoma Classification in Single Cell RNA Sequencing Data
+                    </p>
+                  <figure class="image is-16by9">
+                    <img class="imageW" data-target="gbm-modal" src="dist/img/gbm1.png">
+                    <div class="modal-trigger middleW btn-rounded-white" data-target="gbm-modal" >
+                      <p>View Detail</p>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
+       
+
+
+        
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script>
+    // Porfolio isotope and filter
+  $(window).on('load', function() {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-flters li').on('click', function() {
+      $("#portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+    });
+
+  });
+  </script>
+
+
+  
+
+  
+
+
+  <!-- <section class="section" data-section="skills">
+    <div class="container">
+      <div class="row">
+        <h1 class="title">Computer skills</h1>
+        <hr/>
+       </div>
+       <div class="row">
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+             <div class="progress-wrap">
+                <h3 > JavaScript/jQuery (3 yrs)</h3>
+                
+                <div class="progress">
+                   <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
+                      aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                      <span>85%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+           <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+             <div class="progress-wrap">
+                <h3 >HTML5/CSS3/SCSS/Bootstrap (2.5 yrs)</h3>
+                <div class="progress">
+                   <div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
+                      aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                      <span>85%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+             <div class="progress-wrap">
+                <h3 >React/React Native/Expo Framework (2 yrs)</h3>
+                <div class="progress">
+                   <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
+                      aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      <span>80%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+             <div class="progress-wrap">
+                <h3 >Java/JavaFX/JavaCUP (4 yrs)</h3>
+                <div class="progress">
+                   <div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                      <span>70%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+             <div class="progress-wrap">
+                <h3 >PHP/MySQL (1.5 yrs)</h3>
+                <div class="progress">
+                   <div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
+                      aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      <span>60%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+             <div class="progress-wrap">
+                <h3 >C/C++ (2 yrs)</h3>
+                <div class="progress">
+                   <div class="progress-bar color-5" role="progressbar" aria-valuenow="55"
+                      aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                      <span>55%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+             <div class="progress-wrap">
+                <h3 >Tensorflow/Keras/PyTorch (1 yrs)</h3>
+                <div class="progress">
+                   <div class="progress-bar color-6" role="progressbar" aria-valuenow="50"
+                      aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                      <span>50%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+             <div class="progress-wrap">
+                <h3 >Python/Pandas/NumPy (1yr)</h3>
+                <div class="progress">
+                   <div class="progress-bar color-7" role="progressbar" aria-valuenow="50"
+                      aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                      <span>50%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+             <div class="progress-wrap">
+                <h3 >C# (0.5 yr)</h3>
+                <div class="progress">
+                   <div class="progress-bar color-3" role="progressbar" aria-valuenow="45"
+                      aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                      <span>45%</span>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+            <div class="progress-wrap">
+               <h3 >R (0.5 yr)</h3>
+               <div class="progress">
+                  <div class="progress-bar color-1" role="progressbar" aria-valuenow="40"
+                     aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                     <span>40%</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+       </div>
+        </div>
+ </section> -->
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+ 
+ 
+
+ <!-- <section class="section">  
+  <div class="container" style = "text-align: center;"> 
+    <div class="row" style="text-align: left;">
+      <h1 class="title">Lab skills</h1>
+      <hr/>
+     </div>
+     <br>
+     <button class="collapsible subtitle is-5 " style = "font-weight: bold;">Biochemistry Lab</button>
+<div class="contentW">
+  <div id = "skills" >
+    <ul>
+        
+      <div class="btn-rounded-black">
+        <p>PCR</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Primer design</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Restriction digest</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Gibson Assembly</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Screening</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Site-directed mutagenesis</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Agarose gel electrophoresis</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>SDS-PAGE electrophoresis</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Western blot</p>
+      </div>
+
+      <div class="btn-rounded-black">
+        <p>Protein overexpression</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>T7/Lac system</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Bacterial transformation</p>
+      </div>
+
+      <div class="btn-rounded-black">
+        <p>Protein purification</p>
+      </div>
+      
+      <div class="btn-rounded-black">
+        <p>Chromatography</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>UV-Vis Spectroscopy</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Fluorescence spectroscopy</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>FRET</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>PyMol</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Protein folding</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Enzyme kinetics</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Ligand binding</p>
+      </div>
+  </ul>
+  </div>
+</div>
+
+
+<button class="collapsible subtitle is-5" style = "font-weight: bold;">Analytical Chemistry Lab</button>
+<div class="contentW">
+  <div id = "skills" >
+    <ul>
+        
+      <div class="btn-rounded-black">
+        <p>Blanks</p>
+      </div>
+     
+      <div class="btn-rounded-black">
+        <p>Quality Control Sampling</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Spike Recoveries</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>EPA Method Detection Limit</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Statistical analysis</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Volumetric Analyses</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Calibration Checks</p>
+      </div>
+      
+      <div class="btn-rounded-black">
+        <p>polyprotic acid-base titration</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Buffer preparation</p>
+      </div>
+
+      <div class="btn-rounded-black">
+        <p>Electrochemical cell</p>
+      </div>
+      
+      <div class="btn-rounded-black">
+        <p>Indicator electrodes</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Chromatography</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Standardization of solution</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>spectrophotometric analysis</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Chemical oxygen demand method</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Identification of unknown acid</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>ICP-MS analysis</p>
+      </div>
+    
+  </ul>
+  </div>
+</div>
+
+
+<button class="collapsible subtitle is-5" style = "font-weight: bold;">Organic Chemistry Lab</button>
+<div class="contentW">
+  <div id = "skills" >
+    <ul>
+        
+      <div class="btn-rounded-black">
+        <p>Computational molecular modeling</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Computational chemistry</p>
+      </div>
+     
+      <div class="btn-rounded-black">
+        <p>Acid-base extraction</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Purification</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Fractional distillation</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Reflux</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p><sup>1</sup>H-NMR</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p><sup>13</sup>C-NMR</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p><sup>19</sup>F-NMR</p>
+      </div>
+      <div class="btn-rounded-black">
+      <p>HSQC</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>HMBC</p>
+      </div>
+      <div class="btn-rounded-black">
+          <p>Attached proton test (APT)</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Infrared spectroscopy</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>GC-MS</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Recrystallization</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>SN1/SN2 reactions</p>
+      </div>
+      
+      <div class="btn-rounded-black">
+        <p>E1/E2 reactions</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Oxidation reactions</p>
+      </div>
+
+      <div class="btn-rounded-black">
+        <p>TLC plate</p>
+      </div>
+      
+      <div class="btn-rounded-black">
+        <p>Imine formation reactions</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>EAS reactions</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Friedel-Crafts acylations</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Grignard reactions</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>Biginelli synthesis</p>
+      </div>
+      <div class="btn-rounded-black">
+        <p>SNAr reactions</p>
+      </div>
+    
+  </ul>
+  </div>
+</div>
+
+  </div>
+ </section> -->
+
+
+
+
+  <section class="section" data-section="contact" id="my-contacts">
+    <div class="container">
+      <h1 class="title">Contact</h1>
+      <hr />
+      <nav class="level">
+        
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://github.com/kunlunW" target="_blank" rel="noopener noreferrer" class="icon is-large">
+              <i class="fab fa-2x fa-github"></i>
+            </a>
+            <p class="heading"><a href="https://github.com/kunlunW" target="_blank" rel="noopener noreferrer" >github.com/kunlunw</a></p>
+          </div>
+        </div>
+
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=100022003718813" target="_blank" rel="noopener noreferrer" class="icon is-large">
+              <i class="fab fa-2x fa-facebook"></i>
+            </a>
+            <p class="heading"><a href="https://www.facebook.com/profile.php?id=100022003718813" target="_blank" rel="noopener noreferrer" >Mark Wang</a></p>
+          </div>
+        </div>
+
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="mailto:kw2964@columbia.edu" class="icon is-large">
+              <i class="fas fa-2x fa-envelope"></i>
+            </a>
+            <p class="heading"><a href="mailto:kw2964@columbia.edu">kw2964@columbia.edu</a></p>
+          </div>
+        </div>
+
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://www.linkedin.com/in/kunlun-wang-9a87781aa/" target="_blank" rel="noopener noreferrer" class="icon is-large">
+              <i class="fab fa-2x fa-linkedin-in"></i>
+            </a>
+            <p class="heading"><a href="https://www.linkedin.com/in/kunlun-wang-9a87781aa/" target="_blank" rel="noopener noreferrer" >linkedin</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  
+
+  <!-- Modals -->
+
+
+  <!-- BeatProfiler modals -->
+  <div id="beatprofiler-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">BeatProfiler</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="beatprofiler-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/beatprofiler.png">
+          </figure>
+          <figure class="image is-5by4 carousel-cell">
+            <img src="dist/img/firstpage.png">
+          </figure>
+          <figure class="image is-5by4 carousel-cell">
+            <img src="dist/img/secondpage.png">
+          </figure>
+          <figure class="image is-5by4 carousel-cell">
+            <img src="dist/img/thirdpage.png">
+          </figure>
+          <figure class="image is-5by4 carousel-cell">
+            <img src="dist/img/fourthpage.png">
+          </figure>
+          <figure class="image is-5by4 carousel-cell">
+            <img src="dist/img/fifthpage.png">
+          </figure>
+          <figure class="image is-16by9 has-ratio carousel-cell">
+            <img src="dist/img/analysis.png">
+          </figure>
+        </div>
+
+        <div class="content">
+
+          <p>
+            Developed a first-ever, all-in-one, multi-purpose, download-and-ready-to-use scientific graphical user interface (GUI) in the field of cardiac imaging that fully automates high throughput data pre-processing and analysis of cardiac calcium and brightfield imaging videos, for monolayers of iPSC-CMs, cardiac organoids, and engineered heart tissues    
+          </p>
+
+          <p>
+            Enabled precise, automated, and high-throughput extraction of photobleach corrected traces, traditional feature metrics, single beat segmentation traces, and representations in spatial and frequency domain. Support 5+ video formats, implemented novel masking, photobleach correction, and signal peak algorithms for ultra-precise signal detection and segmentation 
+          </p>
+
+          <p>
+            Followed UX design principles such that users can easily download the software, drag and drop videos, and generate outputs without seeing any code or downloading any packages, we allowed any labs, regardless of its knowledge of advanced data processing to share the benefits of getting results in a fast, precise, and highly customizable manner without the cost of hiring a data scientist
+          </p>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        
+        <a href="https://beatprofiler.github.io/" target="_blank" rel="noopener noreferrer" class="button is-info">Website</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+
+  <!-- Calcium page modal -->
+  <div id="calcium-project-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Deep learning iPSC-CM papaer</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="calcium-project-modal-carousel" class="carousel">
+          <figure class="image is-3by1 carousel-cell">
+            <img src="dist/img/calcium_project.png">
+          </figure>
+          <figure class="image is-3by1 carousel-cell">
+            <img src="dist/img/method.png">
+          </figure>
+        </div>
+        <div class="content">
+
+          <p>
+            Publication currently in preparation
+          </p>
+
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        
+        <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="button is-info">Paper link</a> -->
+        <button class="button is-info" disabled>
+            Paper link
+        </button>
+
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- blog service modal -->
+  <div id="blog-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">ATeam blog service</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="blog-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog_arch.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog1.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog2.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog3.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog_add.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog4.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog5.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog6.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog_api.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog_doc.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/blog_cloudfront.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/user_microservice.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/google_oauth.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/user_dashboard.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/post_microservice.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/SNS.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/comment_notification1.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/comment_notification2.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/composite.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/cicd.png">
+          </figure>
+        </div>
+        <div class="content">
+
+          <p>
+            The project is a multi-purpose blogging website with various microservices. 
+            It includes three core microservices for handling user registration and login, 
+            posting blogs, and posting comments. 
+          </p>
+
+          <p>
+            These microservices are deployed on EC2 and 
+            Elastic Beanstalk, and are connected through a composite microservice that is 
+            responsible for displaying the number of posts and comments a user has made on their 
+            dashboard. The frontend of the website is stored in S3 and is integrated with the 
+            rest of the application through Amazon Cloud Front, which also converts HTTP traffic 
+            to HTTPS traffic. The application includes two APIs for enhancing the user experience: 
+            a fun fact API and a profanity API. The middleware in the application uses Amazon SNS 
+            and Lambda to send email notifications to administrators when a new user registers. 
+            The API gateway manages communication between the microservices. 
+          </p>
+          
+          <p>
+            When a user logs in 
+            through Gmail, their public ID token is temporarily stored in the local storage of 
+            their browser and is used to authenticate and protect the user's information when 
+            interacting with the website or database. The integrity of the ID token is verified 
+            using the Google API Client Library.
+          </p>
+
+          <p>
+            The project also has a CI/CD (Continuous Integration/Continuous Development) pipeline using Github Action to automatically deploy updates to AWS EC2.
+          </p>
+
+
+          <div class="tags">
+            <span class="tag">Microservice</span>
+            <span class="tag">Angular</span>
+            <span class="tag">Flask</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Google OAuth</span>
+            <span class="tag">AWS</span>
+            <span class="tag">CI/CD</span>
+          </div>
+
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        
+      
+        <a href="https://www.youtube.com/watch?v=2rezG7DaMaM" target="_blank" rel="noopener noreferrer" class="button is-info">Watch demo</a>
+
+
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- stackoverflow modal -->
+  <div id="stackoverflow-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Real-time Stackoverflow visualizer</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="stackoverflow-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/stackoverflow_arch.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bubblechart.gif">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/barchart.gif">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/piechart.gif">
+          </figure>
+
+
+        </div>
+        <div class="content">
+
+          <p>
+            The purpose of this project is to fetch real time StackOverflow tag data 
+            in order to visualize, analyze and understand the rapidly evolving 
+            programming trends amongst users around the world. 
+            Furthermore, the analysis would also involve a machine learning model 
+            prediction to show if the quality of the question being posed is 
+            high or low and whether it requires an admin to intervene in order to 
+            make the question quality better. This project utilizes the Stack 
+            Exchange API which allows users to retrieve and view information 
+            used by the Stack Overflow. 
+
+          </p>
+
+          <div class="tags">
+            <span class="tag">StackOverflow</span>
+            <span class="tag">Deep learning</span>
+            <span class="tag">Spark</span>
+            <span class="tag">Hadoop</span>
+            <span class="tag">D3.JS</span>
+            <span class="tag">google-cloud</span>
+            <span class="tag">Bubble Chart</span>
+            <span class="tag">Bar Chart Race</span>
+            <span class="tag">Pie Chart</span>
+          </div>
+
+
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        
+      
+        <a href="https://github.com/Sapphirine/202212-23-StackOverflow-Visualization" target="_blank" rel="noopener noreferrer" class="button is-info">Project link</a>
+
+
+        <a href="https://www.youtube.com/watch?v=7jOH5gX1w9Q&t=1s" target="_blank" rel="noopener noreferrer" class="button is-info">Watch demo</a>
+
+
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="project-1-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Lacry-Intelligence</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="project-1-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/lacry1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/lacry2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/lacry3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/lacry4.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/lacry5.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/keras.jpg">
+          </figure>
+          <figure class="image is-8by10 has-ratio carousel-cell">
+            <img src="dist/img/lacry6.png">
+          </figure>
+          <figure class="image is-8by10 has-ratio carousel-cell">
+            <img src="dist/img/lacry7.png">
+          </figure>
+          <figure class="image is-8by10 has-ratio carousel-cell">
+            <img src="dist/img/lacry8.png">
+          </figure>
+          <figure class="image is-16by9 has-ratio carousel-cell">
+            <img src="dist/img/lacry9.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/lacry10.png">
+          </figure>
+        </div>
+
+        <div class="content">
+
+          <p>Used an open-source object detection framework called Ultralytics YOLOv5 Pytorch and programmed a YOLOv5 algorithm based convolutional neural network model to efficiently conduct real-time object recognition of microorganism Lacrymaria Olor.
+            Trained the model with more than 2,000 intercepted microorganism images of active and dormant state. 
+            Object detection model achieved a high mean average precision (mAP@0.5) of 97%.   
+            </p>
+            <p>
+              Built a tracking algorithm to accurately track and label each microorganism, achieved 70% accuracy. 
+            Built an analytical user interface with synchronous data transmission function that efficiently collects data about the active & dormant & transition time periods. 
+            Achieved real-time identification, tracking, labeling, and statistical analysis of microorganisms, and greatly improved the efficiency of data analysis
+            </p>
+
+          <div class="tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">YOLOv5 Algorithm</span>
+            <span class="tag">CNN</span>
+            <span class="tag">Linear sum assignment</span>
+            <span class="tag">gRPC</span>
+            <span class="tag">PyQt</span>
+            <span class="tag">PyQtGraph</span>
+          </div>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        
+        <a href="https://github.com/kunlunW/LacryIntelligence" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-2-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Badger Byte</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="project-2-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/bb1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/bb2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/bb3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+
+          <p>Created a mobile responsive website, where customers can create an order, 
+            set payment options,and select a time to come pick up their food. 
+            The restaurant staff should be able to view all of the incoming orders and 
+            prioritize them. The system includes, the following features: Accounts, CustomerActions, AdminActions
+            Restaurant Staff Actions, Customer Payment, and Pick Up Information. </p>
+
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Axios</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">XAMPP Server</span>
+          </div>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+
+        <a href="https://github.com/kunlunW/CS506-Spike-Exercise" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-3-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Homework Hub</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-3-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh4.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh-test.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh5.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh6.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh7.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh-chat.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh8.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/hh-diagram2.png">
+          </figure>
+          <figure class="image is-1by1 carousel-cell">
+            <img src="dist/img/hh-diagram.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>For educators, especially at the elementary level, 
+            it is quite difficult to keep parents up to date and on the same page. 
+            When it comes to homework, tests, and general announcements, often times 
+            it is left up to the parent to shuffle through their child’s disorganized 
+            backpack in order to figure out what they are currently studying and what 
+            they should be working on now. This web application will allow teachers 
+            to post updates on the topics they are covering in class, 
+            important announcements, homework assignments, and test dates. 
+            No longer will parents and teachers have to worry about whether everyone 
+            is up to speed, allowing a classroom to run smoothly and the children to 
+            learn more effectively.</p>
+            <p>
+              Features include: Modify user information, calender view, view/edit parents/students information,
+              view/edit announcements, view/edit homework, view/edit tests, view/edit classrooms, chatroom.
+            </p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Axios</span>
+            <span class="tag">SCSS</span>
+            <span class="tag">Socket.IO</span>
+            <span class="tag">Jest</span>
+            <span class="tag">PHPUnit</span>
+
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+
+        <a href="https://github.com/kunlunW/HomeworkHub" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">VR: Escape the haunted hospital</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-4-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr1.jpeg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr4.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/escape.jpg">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr5.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr6.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr7.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr8.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr9.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/vr10.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Created an exciting, immersive, and thrilling experience of exploring 
+            a haunted house/escape room where the users need to gather useful resources 
+            and use strategies to solve the puzzles and escape from the room.</p>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Blender</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://www.youtube.com/watch?v=r5wGH6h8r1Y&t=600s&ab_channel=KUNLUNWANG" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-5-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Role Playing Game: Doom Tower(2D)</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-5-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt1.jpeg">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt2.jpeg">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt3.jpeg">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt4.jpeg">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt5.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt6.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt7.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt8.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt9.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt10.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt11.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt12.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt13.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/dt14.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Created a strategy and puzzle-solving role-playing game (RPG) in Ruby, including initialized leading actor property, 
+            combat calculation, enemy data processing, actor skills, enemy skills, etc. Utilized the knowledge of finite state machine 
+            in computing theory to design game elements. Wrote a user interface to help users understand how to use game items, archive, and read files. 
+            </p>
+          <div class="tags">
+            <span class="tag">Ruby</span>
+            <span class="tag">RPGMaker XP</span>
+            <span class="tag">Finite State Machine</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://github.com/kunlunW/Doom-Tower" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-6-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Badger Course</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-6-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bc1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bc2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bc3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bc4.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bc5.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bc6.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bc7.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Created a course selection/enrollment website for UW-Madison. Features include: 1. created and organized a way to represent the course data to the user 
+            2.  designed a search and filter method to decide which courses to display given a variety of inputs
+          3. created a cart that users can add courses to and remove courses from
+          4. created a section where the users can see their completed courses 
+          5. created a function in which the users will be able to rate their finished courses 
+          6. created a mechanism in which the application will recommend courses to users based on their rating 
+        </p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">RESTful API</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Asynchronous</span>
+            <span class="tag">API</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://github.com/kunlunW/Some-UI-Stuff/tree/main/Badger-Course-Scheduler-2" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="project-7-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Graphics Town</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-7-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gt1.jpeg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gt2.jpeg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gt3.jpeg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gt4.jpeg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gt5.jpeg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gt6.jpeg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gt7.jpeg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gt8.jpeg">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Programmed a complex and interactive 3D city; 
+            applied advanced computer graphics theory and algorithms such 
+            anti-aliasing, Bezier curve, advanced texturing/shading/lighting, 
+            B-spline, 3D projection, Z-buffer algorithm, Euler’s theorem, 
+            Barycentric interpolation, anisotropy, polygonal meshes, etc. </p>
+          <div class="tags">
+            <span class="tag">Pure JavaScript</span>
+            <span class="tag">OpenGL Shading language</span>
+            <span class="tag">Computer graphics theory</span>
+           
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://github.com/kunlunW/3DModel" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+
+  <div id="project-8-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">The Effect of The E106D Mutation on HCAII (Paper)</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-8-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H1.jpg">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/H3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H4.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H5.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H6.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H7.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H8.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H9.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H10.png">
+          </figure>
+          <figure class="image is-3by1 carousel-cell">
+            <img src="dist/img/H11.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H12.png">
+          </figure>
+          <figure class="image is-3by1 carousel-cell">
+            <img src="dist/img/H13.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H14.png">
+          </figure>
+          <figure class="image is-3by1 carousel-cell">
+            <img src="dist/img/H15.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/H17.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Studied the effect of Glu106 to Asp mutation on protein stability, 
+            enzymatic activity, and ligand binding of HCAII. Efficiently used biochemistry 
+            lab techniques (PCR, Gibson Assembly, the transformation of E.Coli, minipreps, 
+            blue/white screening, expression of HCAII with T7 promoter system and Lac operon, 
+            immobilized metal affinity chromatography, dialysis, SDS-PAGE electrophoresis, 
+            fluorescence spectroscopy prism analysis, FRET, etc.) to study the effect of the 
+            mutations on the HCAII enzyme, combining with computational biochemistry techniques (PyMol, conservation analysis, prism analysis)
+            </p>
+          <div class="tags">
+            <span class="tag">Biochemical methods</span>
+            <span class="tag">HCAII</span>
+            <span class="tag">Protein mutation</span>
+            <span class="tag">Protein stability</span>
+            <span class="tag">Enzymatic activit</span>
+            <span class="tag">Ligand binding</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://drive.google.com/file/d/1hhesKu7DVFazo_AbKhn8M6eqPg7C8cMm/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button is-info">Paper Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+
+  <div id="project-9-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title" >Phosphorous ... Gradient in Lake Mendota (Paper)</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-9-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc4.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/pc5.png">
+          </figure>
+          <figure class="image is-4by4 carousel-cell">
+            <img src="dist/img/pc6.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc7.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc8.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc9.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc10.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc11.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc12.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/pc13.png">
+          </figure>
+          
+        </div>
+
+        <div class="content">
+          <p>To determine if the concentration of phosphorous varies across different locations of Lake Mendota in Madison, WI.; 
+            determine locations with possible fertilizer runoff or other contamination. 
+            Designed and implemented the project, used ascorbic acid method to determine 
+            the total phosphorous concentration of lake water sample; efficiently used 
+            analytical chemistry techniques, including generation of absorption spectra, 
+            generation of the calibration curve, determination of MDL, digestion of lake 
+            water samples, ICP analysis, Spike recovery, ANOVA test, etc.
+            </p>
+          <div class="tags">
+            <span class="tag">Analytical chemistry methods</span>
+            <span class="tag">Phosphorous concentration</span>
+            <span class="tag">Lake environment preservation</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://drive.google.com/file/d/1AP1lzzjYULi9JaAyLB0B9pDClElaiP1x/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button is-info">Paper Link</a>
+
+        
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="project-10-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Badger Bank</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-10-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bbank1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bbank2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bbank3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/bbank4.png">
+          </figure>
+          
+        </div>
+
+        <div class="content">
+          <p>Created a simple banking website that helps users visualize and manage their savings and spending. </p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://github.com/kunlunW/Some-UI-Stuff/tree/main/BadgerBank-beta" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+
+  <div id="project-11-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Different ... Their Internal Metabolism (Paper)</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-11-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/aus1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/aus2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/aus3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/aus4.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/aus5.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/aus6.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/aus7.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/aus8.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="dist/img/aus9.png">
+          </figure>
+          
+        </div>
+
+        <div class="content">
+          <p>Used botanical methods to analyze the eucalyptus and mistletoe leaves in different areas of Australia; utilized statistical techniques to propose the physiological structure/metabolic function of mistletoe and eucalyptus. 
+            Wrote a paper to propose ecological implications of the mistletoe infestation on the forests; provided theoretical basis and support for Australian biotechnology to remove infection; presented to the public and researchers in the Research Conference, and obtained the certificate of Individual Project. 
+            Designed a series of chemical reagents to remove the cuticle and mesophyll of the leaves and treated 55 pairs of leaves with this reagent design; applied ImageJ to measure the leaf vein length per area (LVA) and conducted the statistical analysis and so on
+            </p>
+          <div class="tags">
+            <span class="tag">Botanical methods</span>
+            <span class="tag">Eucalyptus</span>
+            <span class="tag">Mistletoe</span>
+            <span class="tag">LVA</span>
+            <span class="tag">Parasitic infection</span>
+            <span class="tag">Plant metabolism</span>
+            <span class="tag">Forest preservation</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://drive.google.com/file/d/1W43Tisc_dtl3aBkp88pCTRpFS_vCwIIl/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button is-info">Paper Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="project-12-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Image Recognition & Classification</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-12-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/tensor1.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/tensor2.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/tensor3.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/tensor4.png">
+          </figure>
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/tensor5.png">
+          </figure>
+          
+        </div>
+
+        <div class="content">
+          <p>Applied my knowledge of machine learning, neural network, and computer vision to construct a CNN using Tensorflow and Keras to classify the active/dormant state of microorganism lacrymaria olor. .</p>
+          <div class="tags">
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Keras</span>
+            <span class="tag">CNN</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Numpy</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://github.com/kunlunW/LacryIntelligence" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="project-13-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Odometer Terminator</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-13-modal-carousel" class="carousel">
+
+          <figure class="image is-16by9 carousel-cell" >
+            <img src="dist/img/odometer_arch.png">
+          </figure>
+
+          <figure class="image  carousel-cell" >
+            <img src="dist/img/ot1.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot2.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot3.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot4.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot5.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot6.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot7.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot8.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot9.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot10.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot11.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot12.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot13.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/ot14.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          
+        </div>
+
+        <div class="content">
+          <p>Supplied customers with an easy and streamlined way to provide all the information needed when reporting a claim or asking for a quote.
+            Developed a mobile app to allow the customers to manage their insurance plan/status completely on their phones; implemented various function such as personal account, car status, insurance plan, schedule appointment, report accident, etc.; embedded a computer vision model called OCR to accurately extract odometer mileage information from users’ uploaded images 
+            </p>
+          <div class="tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Expo</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">PHP</span>
+            <span class="tag">XAMPP Server</span>
+            <span class="tag">OCR Model</span>
+            <span class="tag">RESTful API</span>
+            <span class="tag">Password Authentication</span>
+            <span class="tag">Agile</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://github.com/kunlunW/CS638-Odometer-Terminator" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+
+  <div id="project-14-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Scope Stream</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-14-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell" >
+            <img src="dist/img/cb1.png" >
+          </figure>
+          <figure class="image is-16by9 carousel-cell" >
+            <img src="dist/img/cb2.png" >
+          </figure>
+          <figure class="image is-16by9 carousel-cell" >
+            <img src="dist/img/cb3.png" >
+          </figure>
+          <figure class="image is-16by9 carousel-cell" >
+            <img src="dist/img/cb4.png" >
+          </figure>
+          <figure class="image  carousel-cell">
+            <img src="dist/img/cb5.png" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+          </figure>
+          
+        </div>
+
+        <div class="content">
+          <p>Made a chatbot in Python to interact with the audience on Twitch and receive the audience’s commands to operate microscope remotely.
+            Used Python socket programming to allow the audience’s interaction with the chatbot, imported the automated microscope’s Python class to connect the chatbot with the microscope controller code to enable users’ control of the microscope
+            </p>
+          <div class="tags">
+            <span class="tag">Python Socket</span>
+            <span class="tag">pySerial</span>
+            <span class="tag">Platform</span>
+            <span class="tag">Numpy</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        <a href="https://github.com/kunlunW/TwitchIO-Bot" target="_blank" rel="noopener noreferrer" class="button is-info">Project Link</a>
+
+      </footer>
+    </div>
+  </div>
+
+
+
+  <div id="project-15-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Biomaterial & Drug delivery</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p>One of my biggest academic interests are novel biomaterial and drug delivery. 
+            I am most interested in 2 classes of drug delivery: <strong>lipoprotein-based drug delivery </strong>
+            and <strong>synthetic-biology-based drug delivery</strong>. I first came into contact with lipoprotein as a 
+            potential drug delivery vehicle when I was taking Biochem645 (Molecular Control of 
+            Metabolism and Metabolic Disease). In class, I learned a lot about the mechanism of 
+            how lipoproteins transport cholesterol and triglycerides through a highly organized 
+            ligand-receptor recognition system, and this inspired me to think about its 
+            application in drug delivery. From my perspective, lipoproteins are like godsent 
+            gifts to cancer therapy research as they are biogenic, non-immunogenic, and 
+            intrinsically stable. Take LDL and HDL as an example, these magical 
+            cholesterol-delivering vehicles interact with cell types involved in lipid 
+            metabolism by binding to receptors such as SR-B1. And receptors like SR-B1 are 
+            found to be overexpressed in cancer cells, particularly in prostate and breast 
+            cancer cells, making LDL and HDL promising candidates to accurately target cancer 
+            cells. </p>
+
+            <p>
+              <strong>Nanorobots</strong> such as <strong>engineered platelets & RBC</strong> also attract me greatly because of 
+            their therapeutic delivery abilities. Such nanorobots are biocompatible and 
+            biodegradable and can be transfused into human body and used for targeting once 
+            “inaccessible” body regions such as the brain. For my career goal, I hope to 
+            conduct research in cancer and drug delivery. I hope I will be able to solve the 
+            mystery of cancer by using information technologies such as RNA-seq and design an 
+            efficient drug delivery system for personalized therapies for cancer treatments.
+            </p>
+          
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-dark">Close</button>
+      </footer>
+    </div>
+  </div>
+
+
+
+  <div id="project-16-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Cancer biology</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p> Cancer research is a major topic in medical research. It plays a
+            critical role in our understanding of molecular control of metabolic diseases. Below are the specific 
+            research area that I'm interested in:  
+
+            <div class="tags">
+              <span class="tag">PI3K/AKT/mTOR pathway</span>
+              <span class="tag">Cancer early diagnosis</span>
+              <span class="tag">Cancer metastasis</span>
+              <span class="tag">Cancer signal tranduction</span>
+              <span class="tag">Inflammation</span>
+              <span class="tag">Oncogene</span>
+              <span class="tag">Autophagy</span>
+              <span class="tag">Novel cancer therapy</span>
+            </div>
+          </p>         
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-dark">Close</button>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+  <div id="project-17-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Bioinformatics</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p> 
+            Bioinformatics is an extremely important subject made possible by the 
+            development of information technology. It massively increased the efficiency, accuracy, and 
+            meaningfulness of biological data analysis. I'm mostly interested in the below areas: 
+
+            <div class="tags">
+              <span class="tag">Molecular diagnostics platforms</span>
+              <span class="tag">Bioinformatics Algorithms</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Gene Expression</span>
+              <span class="tag">High performance computing</span>
+              <span class="tag">Epigenetics</span>
+              <span class="tag">Genomics</span>
+              <span class="tag">Synthetic Biology</span>
+            </div>
+
+          </p>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-dark">Close</button>
+      </footer>
+    </div>
+  </div>
+
+
+
+  <div id="project-18-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Machine learning</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p> 
+            I'm very interested in combining machine learning into biomedical research, for example, using AI to solve 
+            complex protein structures, identify inflammation/aging signals, etc. Below are my primary 
+            area of interests: 
+
+            <div class="tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Predictive Analysis</span>
+              <span class="tag">Bioinformatics</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Disease identification & Diagnosis</span>
+              <span class="tag">Drug discovery</span>
+              <span class="tag">Smart health</span>
+              
+            </div>
+
+          </p>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-dark">Close</button>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- functional genomics modal -->
+  <div id="fg-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Functional genomics project</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="fg-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg1.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg2.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg3.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg4.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg5.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg6.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg7.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg8.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg9.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg10.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg11.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg12.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg13.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg14.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg15.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg16.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg17.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg18.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/fg19.png">
+          </figure>
+        </div>
+        <div class="content">
+
+          <p>
+            The study used a single-cell transcriptomic dataset to analyze the transcriptional responses of 
+            A549 lung adenocarcinoma cells exposed to different anticancer therapeutics. 
+            The histone deacetylase inhibitors (HDACi) group had the highest degree of differential 
+            gene expression and Panobinostat was found to be one of the most effective treatments. 
+            PVT1 and CCND1 were identified as two genes that were significantly downregulated by 
+            Panobinostat. A co-regulation analysis was performed to investigate the relationship 
+            between PVT1 and CCND1 and revealed that they were part of a common pathway governed 
+            by the HDACi group. Further analysis of the co-regulation in modules 6 and 9, which 
+            contained PVT1 and CCND1 respectively, showed that the genes in these modules were 
+            downregulated by HDACi compounds. Reactome pathway analysis confirmed the relatedness 
+            between the genes in the modules and PVT1 or CCND1. The study suggests that 
+            Panobinostat may be effective in inhibiting the cell cycle-related tumorigenesis pathway 
+            through the downregulation of PVT1 and CCND1.
+          </p>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+        
+      
+        <a href="https://drive.google.com/file/d/1r071OPeyp0jMyptHXQ3DzcgbaaTD5zKD/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="button is-info">Project report</a>
+        <a href="https://drive.google.com/file/d/1oh9fWQ8E9q0Sz-WpHi0hz5g825FYRTF8/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button is-info">Project presentation</a>
+
+
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- GBM project modal -->
+
+  <div id="gbm-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">ML classification of GBM subtypes</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="gbm-modal-carousel" class="carousel">
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm2.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm3.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm4.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm5.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm6.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm7.png">
+          </figure>
+
+          
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm9.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm10.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm11.png">
+          </figure>
+
+          <figure class="image is-16by9 carousel-cell">
+            <img src="dist/img/gbm12.png">
+          </figure>
+        </div>
+        <div class="content">
+
+          <p>
+            Glioblastoma (GBM) is an incurable, poorly understood,
+            aggressive type of cancer that occurs in the brain or spinal
+            cord. Past studies have shown distinct gene expression
+            between adult and pediatric GBM and their heterogeneity
+            among patient populations. In this paper, a robust machine
+            learning pipeline consisting traditional machine learning
+            techniques (traditional ML) and deep learning (DL) was
+            developed to classify the adult and pediatric GBM in a
+            single cell RNA sequencing dataset. The machine learning
+            pipeline achieved a 99% precision, recall, and f1-score
+            across 2265 testing samples and discovered 21 hallmark
+            genes that could classify the two subpopulations at an
+            average of 95% accuracy. 
+          </p>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      
+        <a href="https://drive.google.com/file/d/16DSlWMPwaVdcxQruEzZnEHfvEl6SNjss/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button is-info">Project report</a>
+        <a href="https://github.com/kunlunW/Glioblastoba-classification" target="_blank" rel="noopener noreferrer" class="button is-info">Project link</a>
+
+
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Website design by Kunlun Wang
+       </strong>
+     </p>
+      <p>
+         <strong>Copyright © 2023 Kunlun Wang
+        </strong>
+      </p>
+    </div>
+  </footer>
+
+  
+
+  <script src="dist/js/isotope.pkgd.js"></script>
+  <script src="dist/js/isotope.pkgd.min.js"></script>
+
+  <script src="dist/js/bundle.js"></script>
+
+  <!-- typed.js -->
+  <script src="dist/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["a full-stack software developer", "a machine learning enthusiast", "a biochemistry explorer", "an indie game developer", "a big fan of human metabolism", "a big fan of bioinformatics", "a big fan of synthetic biology", "a big fan of cancer biology", "confident that life science + information technology = ∞ "],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 50
+    });
+  </script>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+  <script src="script.js"></script>
+  
+  <!-- <script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/scripts.js"></script> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+<!-- <script src="dist/js/isotope.pkgd.js"></script> -->
+
+
+  
+
+</body>
+
+</html>
